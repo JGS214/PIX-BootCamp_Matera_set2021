@@ -19,7 +19,7 @@ public class Usuario {
     @Column(nullable = false)
     private String sobrenome;
 
-   @OneToOne(optional = false)
+    @OneToOne(optional = false, cascade = { CascadeType.ALL })
     private ContaCorrente contaCorrente;
 
 
